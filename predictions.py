@@ -4,8 +4,8 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error 
 
 # File path for training data and validation data
-train_file_path = '/Users/Vince/Documents/Coding/Kaggle/Kaggle-Housing-Prices/home-data-for-ml-course/train.csv'
-test_file_path = '/Users/Vince/Documents/Coding/Kaggle/Kaggle-Housing-Prices/home-data-for-ml-course/test.csv'
+train_file_path = '../Kaggle-Housing-Prices/home-data-for-ml-course/train.csv'
+test_file_path = '../Kaggle-Housing-Prices/home-data-for-ml-course/test.csv'
 
 # Store training and validation data
 training_data = pd.read_csv(train_file_path)
