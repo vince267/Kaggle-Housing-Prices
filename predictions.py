@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error 
+from sklearn import preprocessing
 
 # File path for training data and validation data
 train_file_path = '../Kaggle-Housing-Prices/home-data-for-ml-course/train.csv'
@@ -16,6 +17,13 @@ y = training_data.SalePrice
 
 # List of features we will focus on
 features = ['LotArea', 'OverallQual']
+
+string_features = ['RoofMatl', 'RoofStyle']
+
+# le = preprocessing.LabelEncoder()
+# le.fit(features)
+# le.transform(features)
+
 
 # Store columns with features as X 
 X = training_data[features]
